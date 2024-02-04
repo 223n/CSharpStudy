@@ -36,7 +36,7 @@ namespace csharp_study_test
         {
             try
             {
-                using (var item = new ItemClass("item", -1, null)) { }
+                using var item = new ItemClass("item", -1, null);
             }
             catch (ArgumentOutOfRangeException ex)
             {
