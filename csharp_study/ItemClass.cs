@@ -12,6 +12,18 @@
     public class ItemClass : IItem, IDisposable, ICloneable, IEquatable<ItemClass>
     {
 
+        #region Enumerable
+
+        static IEnumerable<string> Suits()
+        {
+            yield return "clubs";
+            yield return "diamonds";
+            yield return "hearts";
+            yield return "spades";
+        }
+
+        #endregion
+
         #region Enum
 
         public enum ColorTypes
